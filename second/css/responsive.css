@@ -1,0 +1,300 @@
+@import url(./_global.css);
+
+
+@media (min-width:1301px) and (max-width:1400px) {
+    .measurment-area .measurment-content .spacing1 {
+        margin-right: -40px;
+    }
+
+    .bg-layer {
+        background-position: center;
+        width: 100%;
+        padding: 106px 110px 210px 160px;
+        margin-left: 0;
+        background-size: cover;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1300px) {
+
+    .measurment-area .measurment-content .spacing1 {
+        margin-right: -10px;
+    }
+
+    .bg-layer {
+        background-position: center;
+        width: 100%;
+        padding: 106px 110px 210px 160px;
+        margin-left: 0;
+        background-size: cover;
+    }
+}
+
+@media (max-width:1200px) {
+
+    .container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .container .row {
+        margin: 0;
+    }
+
+    .measurment-area .measurment-content .spacing1 {
+        margin-right: -12px;
+    }
+
+    .bg-layer {
+        background-position: center;
+        width: 100%;
+        padding: 106px 110px 210px 160px;
+        margin-left: 0;
+        background-size: cover;
+    }
+
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 97px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        border: 0 0 0.5px solid grey;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        width: calc(100% - 50px);
+    }
+
+    .menu>li {
+        z-index: 1000;
+        display: flex;
+        justify-content: start;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: var(--white-color);
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+    .menu>li:last-child {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1500px) {
+    .img-carousel .slider-text>h5 {
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .img-carousel .slider-text>h2 {
+        font-size: 44px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .img-carousel .slider-text>p {
+        font-size: medium;
+    }
+
+    .img-carousel button {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+
+    .base {
+        padding: 60px 0 !important;
+    }
+
+    .first-footer .feature-icon {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .button-size {
+        position: unset;
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px !important;
+        text-align: center;
+        margin: auto;
+    }
+
+    .footer-navigation input {
+        width: 47.8%;
+        float: none;
+        margin: 0 5px;
+    }
+
+    .img-carousel .slider-text>h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .about-textiles .horizontal-sep,
+    .about-fablio .image-wrapper2:before,
+    .about-fablio .image-wrapper2 {
+        display: none;
+    }
+
+    .about-fablio,
+    .about-fablio .mt_60 {
+        margin-top: 40px !important;
+    }
+
+    .text-style1,
+    .about-product,
+    .pt-70 {
+        padding: 0 !important;
+    }
+
+    .project-text p,
+    .measurment-area .measurment-content .spacing1 {
+        margin: 0;
+    }
+
+    .project-area .project-title .section-title .text-header .title h2,
+    .project-area .project-title .section-title .text-header .title b,
+    .about-product .section-title .text-header .title h2,
+    .section-title .text-header .title h2,
+    .measurment-area .section-title .text-header .title h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .bg-layer {
+        padding: 60px 15px 20px;
+        margin-top: 0;
+    }
+
+    .mt_200 {
+        margin-top: -30px;
+    }
+
+    .text-align-right {
+        text-align: unset;
+    }
+
+    .measurment-area {
+        padding-top: 0 !important;
+        padding-bottom: 15px !important;
+        background-image: none;
+    }
+
+    .measurment-area .section-title {
+        padding: 30px 0 0;
+    }
+
+    .measurment-area .measurment-content {
+        padding: 0px 15px 15px;
+        margin: 0;
+        padding-right: 15px !important;
+    }
+
+    .measurment-layer.feature-style {
+        padding: 0 15px;
+    }
+
+    .blog-area .section-title .text-header,
+    .about-product .section-title .text-header {
+        width: 100%;
+        padding-bottom: 20px;
+        display: block;
+    }
+
+    .footer-area .container {
+        padding: 35px 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .img-carousel .slider-text>h2 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 10px;
+    }
+
+    .about-textiles .vertical-sep {
+        display: none;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .img-carousel .slider-text>p,
+    .about-fablio ul.services-list .sep-line::after {
+        display: none;
+    }
+
+    .about-fablio ul.services-list li {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:576px) {
+    .right {
+        float: none;
+    }
+
+    .first-footer .about-footer .navlogo,
+    .first-footer .about-footer .nav-text {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        display: inline-block;
+    }
+
+    .first-footer .about-footer .navlogo img {
+        width: 170px;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .first-footer .feature-icon {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .footer-navigation input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .first-footer .mb-5 {
+        margin-bottom: 10px !important;
+    }
+
+    .first-footer .container .row:last-child {
+        padding-top: 20px;
+    }
+}

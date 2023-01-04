@@ -1,0 +1,267 @@
+:root {
+    --skin-color: rgb(241 117 43);
+    --blue-color: #0b4a8f;
+    --back-color: rgba(255, 255, 255, 255);
+    --border: 0.2px solid rgba(166, 163, 163, 0.296);
+    --box-shadow: 10px rgba(153, 153, 153, 0.232);
+    --bk-grey: #f8f8f8;
+}
+
+/* ----------Spacing----------  */
+.page,
+.header-area {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.base {
+    padding: 90px 0;
+}
+
+.spacing {
+    padding: 60px 30px 80px 40px;
+}
+
+.mt_100 {
+    margin-top: -100px;
+}
+
+.z-5 {
+    position: relative;
+    z-index: 5 !important;
+}
+
+.box-border img {
+    border: 8px solid #ffff;
+}
+
+.align-left {
+    position: relative;
+    text-align: left;
+}
+
+.align-right {
+    position: relative;
+    float: right;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center !important;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.align-item{
+    align-items: center;
+}
+
+.title-area .title-header,
+.title-area .title {
+    font-weight: 740;
+    line-height: 50px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.first-contact {
+    padding: 50px 0 80px;
+}
+
+.second-contact {
+    padding-bottom: 85px;
+}
+
+.attraction,
+.contact {
+    padding-bottom: 40px;
+}
+
+.normal-text {
+    font-weight: normal;
+}
+
+/* -----Service list-----  */
+ul.services-list {
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+ul.services-list li {
+    display: inline-block;
+    width: calc(50% - 3px);
+    float: none;
+    padding: 0 0 5px 30px;
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0;
+}
+
+ul.services-list li::before {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    font-size: 22px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/* -----Icon Box----- */
+
+.amenities-area .icon-box,
+.contact .icon-box {
+    display: inline-flex;
+}
+
+.icon-box .icon {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+}
+
+.icon-box .icon i {
+    font-size: xxx-large;
+}
+
+.icon-box .icon-title {
+    font-size: 18px;
+}
+
+.icon-box .icon-content {
+    padding-left: 12px;
+}
+
+.icon-box .icon-title h5 {
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 22px;
+}
+
+.icon-box .icon-content p{
+    color: grey;
+}
+
+/* -----Style----- */
+
+.style1 {
+    background-color: #f7f8fa;
+    position: relative;
+    border: 1px solid #f2f2f2;
+}
+
+.style2 {
+    padding: 20px;
+    border: 1px solid #e3e4e5;
+    background-color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.style3{
+    padding: 24px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* -----Feature Box----- */
+
+.feature-box {
+    padding: 70px 90px 45px;
+    height: 100%;
+}
+
+.feature-box .feature-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -28px;
+}
+
+.feature-box .feature-icon i {
+    color: white;
+    padding: 9px;
+    font-size: 20px;
+}
+
+.feature-content .feature-text p {
+    font-size: 15px;
+    color: grey;
+}
+
+.feature-content .feature-title h5 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+
+/* -----Seprator----- */
+.seprator {
+    width: 100%;
+}
+
+.seprator .sep-line {
+    border-top: 2px solid #e4e4e4;
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* filled-circle */
+
+.filled-circle {
+    background-color: rgba(24, 95, 173, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    position: relative;
+}
+
+/* outlined-circle */
+
+.social-icon .outlined-circle {
+    border: 1px solid rgb(93, 93, 93);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+/* -----page title----- */
+
+.page-title {
+    background-image: radial-gradient(circle, rgb(255 255 255 / 35%) 0%, rgb(0 0 0 / 51%) 0%), url(/images/ttm-pagetitle-bg.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.page-header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-header span,
+.page-header span i,
+.page-text h1 {
+    color: white;
+    font-weight: 600;
+}

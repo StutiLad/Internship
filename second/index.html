@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Fablio</title>
+
+    <!-- animation css  -->
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <!-- Google icon  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- flaticon icon -->
+    <link rel="stylesheet" href="/css/flaticon.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css.map">
+    <!-- glider css -->
+    <link rel="stylesheet" href="/css/slick.css">
+    <!-- <link rel="stylesheet" href="/css/slick-theme.css"> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- ---------------Start Navigation Area--------------- -->
+        <header class="navigation-area sticky-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="top-nav">
+                            <div class="navlogo">
+                                <a href="./index.html"><img src="./images/logo-img.svg" alt="company logo"></a>
+                                <div class="nav-text text-align-left">
+                                    <p class="my-2 px-3">For tomorrow’s people.</p>
+                                </div>
+                            </div>
+
+                            <input id="menu-toggle" type="checkbox" />
+                            <label class='menu-button-container' for="menu-toggle">
+                                <div class='menu-button'></div>
+                            </label>
+                            <ul class="menu">
+                                <li>
+                                    <a href="/index.html" style="color: #c3002f;">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li class="openBtn" onclick="openSearch()">
+                                    <a href="#"><i class="material-icons-outlined">
+                                            search
+                                        </i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <form class="search-form">
+                        <input type="text" placeholder="Search.." name="search" class="search-input">
+                        <div class="search-icon"><i class="material-icons-outlined">
+                                search
+                            </i></div>
+                    </form>
+                </div>
+            </div>
+
+        </header>
+        <!-- ---------------End Navigation Area--------------- -->
+
+        <!-- ---------------Start Image carousel--------------- -->
+        <section class="img-carousel">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner text-align-center">
+                    <div class="carousel-item active">
+                        <div class="d-flex h-100 align-items-center justify-content-center first-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="slider-text text-align-center">
+                                            <h5 class="animate__animated animate__fadeInDown">YOU CAN TRUST US</h5>
+                                            <h2 class="animate__animated animate__fadeInDown fw350">
+                                                Wear <b>Your</b> Best <b>Moments</b>
+                                            </h2>
+                                            <p class="animate__animated animate__fadeInDown">Since more than 40
+                                                years, FABLIO is operating in the textile market manufacture <br>and
+                                                trader. As years go by, the range of produced.</p>
+                                            <div class="d-inline-flex mt-10">
+                                                <!-- button -->
+                                                <a href="#" class="button button1 mx-3">MORE DETAILS</a>
+                                                <a href="#" class="button button2 mx-3">GET A QUOTE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex h-100 align-items-center justify-content-center second-item">
+                            <div class="slider-text">
+                                <div class="slider-text text-align-center">
+                                    <h5 class="animate__animated animate__fadeInDown ">WELCOME TO FABLIO</h5>
+                                    <h2 class="animate__animated animate__fadeInDown fw350">
+                                        The <b>Possibilities</b> Are Endless
+                                    </h2>
+                                    <p class="animate__animated animate__fadeInDown">Since more than 40 years,
+                                        FABLIO is operating in the textile
+                                        market manufacture <br>and trader. As years go by, the
+                                        range of produced.</p>
+                                    <div class="d-inline-flex mt-10">
+                                        <a href="#" class="button button1">MORE DETAILS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- ---------------End Image carousel--------------- -->
+
+        <!-- ---------------Start Main Area--------------- -->
+
+        <div class="site-main">
+
+            <!-- -----About Textiles Section----- -->
+            <section class="about-textiles base">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="mx-5 style1">
+                                <div class="layer">
+                                    <div class="layer-content">
+                                        <div class="section-title">
+                                            <div class="text-header">
+                                                <div class="title">
+                                                    <h2>Ultimate Quality <b> Textiles</b></h2>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <p>We are your reliable and experienced textile partner around the
+                                                    world.</p>
+                                            </div>
+                                        </div>
+                                        <div class="image-wrapper">
+                                            <img src="./images/single-img-01.jpg" class="img-fluid">
+                                        </div>
+                                        <p class="text-align-center pt-4 link-red">
+                                            The Largest Exporter of
+                                            <a href="#">Textile</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-md-6 col-md-6 col-sm-6 ">
+                                    <div class="feature-style">
+                                        <div class="feature-icon">
+                                            <div class="icon show-text">
+                                                <i class="flaticon flaticon-factory"></i>
+                                            </div>
+                                        </div>
+                                        <div class="feature-header">
+                                            <div class="feature-title">
+                                                <h4 class="fw650">Fablio Overview</h4>
+                                            </div>
+                                            <div class="text">
+                                                <p>We Bringing a revolutionary change in the Textile industry through
+                                                    products!</p>
+                                            </div>
+                                            <a class="show-text" href="#">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-6 col-sm-6 vertical-sep right">
+                                    <div class="feature-style">
+                                        <div class="feature-icon">
+                                            <div class="icon show-text">
+                                                <i class="flaticon flaticon-suit"></i>
+                                            </div>
+                                        </div>
+                                        <div class="feature-header">
+                                            <div class="feature-title">
+                                                <h4 class="fw650">Production Capability</h4>
+                                            </div>
+                                            <div class="text">
+                                                <p>We’re try to be not just legally compliant but more than that.</p>
+                                            </div>
+                                            <a class="show-text" href="#">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="horizontal-sep w-100">
+                                <hr>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-6 col-md-6 col-sm-6 ">
+                                    <div class="feature-style">
+                                        <div class="feature-icon">
+                                            <div class="icon show-text">
+                                                <i class="flaticon flaticon-warehouse-1"></i>
+                                            </div>
+                                        </div>
+                                        <div class="feature-header">
+                                            <div class="feature-title">
+                                                <h4 class="fw650">Company History</h4>
+                                            </div>
+                                            <div class="text">
+                                                <p>One of the largest & most reputed textile groups in India & globe.
+                                                </p>
+                                            </div>
+                                            <a class="show-text" href="#">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-6 col-sm-6 vertical-sep right ">
+                                    <div class="feature-style">
+                                        <div class="feature-icon">
+                                            <div class="icon show-text">
+                                                <i class="flaticon flaticon-fabric"></i>
+                                            </div>
+                                        </div>
+                                        <div class="feature-header">
+                                            <div class="feature-title">
+                                                <h4 class="fw650">Fabric Designs</h4>
+                                            </div>
+                                            <div class="text">
+                                                <p>Gold trophy 5 years in a row for being the largest exporter</p>
+                                            </div>
+                                            <a class="show-text" href="#">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -----About Fablio Section----- -->
+            <section class="about-fablio base  pt-0 mt-80 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-xs-12">
+                            <div class="text-style1">
+                                <div class="section-title">
+                                    <div class="text-header">
+                                        <h3>ABOUT FABLIO</h3>
+                                        <div class="title">
+                                            <h2>The Leading Textile Brand In <b>Market Since 1970</b></h2>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>Since more than 40 years, FABLIO is operating in the textile market
+                                            manufacture and trader. As years go by, the range of
+                                            produced textiles has been increased, besides the regular production
+                                            became the largest exporter.</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled services-list mb-3 ">
+                                    <li class="sep-line">Trends the Current Market</li>
+                                    <li>Biological tested fabrics</li>
+                                    <li class="sep-line">The rayon fabrics wholesaler</li>
+                                    <li>Awarded For Best Exporter</li>
+                                    <li class="sep-line">The Global fabrics distributor</li>
+                                    <li>Stable partner global textile</li>
+                                </ul>
+                                <div class="d-inline-flex">
+                                    <!-- button -->
+                                    <a href="#" class="button  button1 mx-3">VIEW MORE</a>
+                                    <a href="#" class="button button3 mx-3">CONTACT US</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-8">
+                            <div class="mt_60">
+                                <div class="image-wrapper2 right">
+                                    <img src="./images/single-img-02.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -----Project Section----- -->
+            <section class="project-area base">
+                <div class="container z-5 ">
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="project-title mb-5 text-align-center ">
+                                <div class="section-title">
+                                    <div class="text-header">
+                                        <div class="title">
+                                            <h2>The Textile,Product, And Apparel <b>Manufacturing</b> Industries.</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-align-center">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="icon-box">
+                                <div class="icon-border">
+                                    <div class="product-icon">
+                                        <i class="flaticon flaticon-suit"></i>
+                                    </div>
+                                </div>
+                                <div class="dot"></div>
+                                <div class="icon-text">
+                                    <div class="section-title">
+                                        <div class="text-header">
+                                            <div class="title">
+                                                <h2>350</h2>
+                                            </div>
+                                            <div class="text">
+                                                <p>Trusted Clients</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="icon-box">
+                                <div class="icon-border">
+                                    <div class="product-icon">
+                                        <i class="flaticon flaticon-fabric"></i>
+                                    </div>
+                                </div>
+                                <div class="dot"></div>
+                                <div class="icon-text">
+                                    <div class="section-title">
+                                        <div class="text-header">
+                                            <div class="title">
+                                                <h2>215</h2>
+                                            </div>
+                                            <div class="text">
+                                                <p>Finished Projects
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="icon-box">
+                                <div class="icon-border">
+                                    <div class="product-icon">
+                                        <i class="flaticon flaticon-factory"></i>
+                                    </div>
+                                </div>
+                                <div class="dot"></div>
+                                <div class="icon-text">
+                                    <div class="section-title">
+                                        <div class="text-header">
+                                            <div class="title">
+                                                <h2>25</h2>
+                                            </div>
+                                            <div class="text">
+                                                <p>Years Of Experience
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="icon-box">
+                                <div class="icon-border">
+                                    <div class="product-icon">
+                                        <i class="flaticon flaticon-placeholder"></i>
+                                    </div>
+                                </div>
+                                <div class="dot"></div>
+                                <div class="icon-text">
+                                    <div class="section-title">
+                                        <div class="text-header">
+                                            <div class="title">
+                                                <h2>45</h2>
+                                            </div>
+                                            <div class="text">
+                                                <p>Visited Conference
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="project-text">
+                                <p class="text-align-center pt-4 link-red">
+                                    Don’t hesitate, contact us for better help and services.
+                                    <a href="#">View More!</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- -----About product----- -->
+            <section class="about-product base p-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="bg-layer">
+                                <div class="bg-layer-content">
+                                    <div class="section-title">
+                                        <div class="text-header">
+                                            <h3>INDUSTRIES & PRODUCTION</h3>
+                                            <div class="title">
+                                                <h2>We Give Top Production From <b>Every Angle</b></h2>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>Fablio is the largest peer-to-peer comparison initiative in the textile
+                                                industry. It tracks the apparel material and home textile sector’s
+                                                progress.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -----Services Section----- -->
+            <section class="base services pt-0 mt_200 z-5 position-relative clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="service-slider">
+                            <div class=" p-3 m-1">
+                                <div class="card">
+                                    <img src="./images/services/services-01-768x512.jpg" class="card-img-top p-3"
+                                        alt="service-1">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href=".">Fabric Printing<span
+                                                    class="material-icons-outlined">
+                                                    arrow_outward
+                                                </span></a></h4>
+                                        <p class="card-text">Have been engaged with modern units for all reqirments of
+                                            conyinuous bleach.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 m-1">
+                                <div class="card">
+                                    <img src="./images/services/services-02-768x512.jpg" class="card-img-top p-3"
+                                        alt="service-2">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href=".">Fabric Dying<span
+                                                    class="material-icons-outlined">
+                                                    arrow_outward
+                                                </span></a></h4>
+                                        <p class="card-text">It is the process of tranfer dyes from the aqueous the
+                                            fiber surface.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 m-1">
+                                <div class="card">
+                                    <img src="./images/services/services-03-768x512.jpg" class="card-img-top p-3"
+                                        alt="service-3">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href=".">Engineering<span
+                                                    class="material-icons-outlined">
+                                                    arrow_outward
+                                                </span></a></h4>
+                                        <p class="card-text">Choose from many fabrics and design your. Create and print
+                                            only the fabric you need.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 m-1">
+                                <div class="card">
+                                    <img src="./images/services/services-04-768x512.jpg" class="card-img-top p-3"
+                                        alt="service-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a href=".">Menufacture<span
+                                                    class="material-icons-outlined">
+                                                    arrow_outward
+                                                </span></a></h4>
+                                        <p class="card-text">Choose from many fabrics and design your. Create and print
+                                            only the fabric you need.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-12  m-auto text-align-center">
+                            <div class="d-inline-flex">
+                                <!-- button -->
+                                <a href="#" class="button button3">VIEW MORE SERVICES!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -----Measurment Area----- -->
+            <section class="base p-0 measurment-area red-bg ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12">
+                        </div>
+                        <div class="col-lg-5 red-bg">
+                            <div class="section-title z-5 mt-4 text-align-right">
+                                <div class="text-header">
+                                    <div class="title">
+                                        <h2>Fablio is Operating In The Textile</h2>
+                                        <h2><b>Market Measurment</b></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="measurment-content">
+                                <div class="measurment-bg-layer spacing1">
+                                    <div class="measurment-bg-layer-inner"></div>
+                                </div>
+                                <div class="measurment-layer">
+                                    <div class="section-title text-align-left">
+                                        <div class="text-header">
+                                            <h3>MEASURMENTS</h3>
+                                            <div class="title mb-4">
+                                                <h2>We Take Occupational Health & <b>Safety Measurements</b></h2>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>Our health experts initiate health promotion solutions that are tailored
+                                                to working conditions and based on participation
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="feature-style">
+                                                <div class="feature-icon">
+                                                    <div class="check-icon">
+                                                        <i class="fa fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-header">
+                                                    <div class="feature-title">
+                                                        <h4 class="fw650 ps-3 mb-0">Safety At Work</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="text mt-2">
+                                                    <p>We make workplace safe any aspects for employees</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="feature-style">
+                                                <div class="feature-icon">
+                                                    <div class="check-icon">
+                                                        <i class="fa fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-header">
+                                                    <div class="feature-title">
+                                                        <h4 class="fw650 ps-3 mb-0">Healthy Place</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="text mt-2">
+                                                    <p>Activities are perform by experts at enterprise level</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-line">
+                                        <hr>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progressbar-title">
+                                            Textile
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar" style="width: 90%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progressbar-title">
+                                            Manufacture
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -----Testimonial Area (review)----- -->
+            <section class="base review-area position-relative bg-img2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="project-title pt-70 mb-4 text-align-center ">
+                                <div class="section-title">
+                                    <div class="text-header">
+                                        <h3>TESTIMONIALS</h3>
+                                        <div class="title">
+                                            <h2>Our Customers <b>Are Saying?</b></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 m-auto">
+                            <div class="testimonial-slider">
+                                <div class="testimonial">
+                                    <div class="testimonial-avatar ">
+                                        <div class="avatar-img">
+                                            <img src="/images/testimonial/01.jpg" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <blockquote class="testimonial-text">
+                                            Fablio's customer service is great. I was searching &amp; found exactly what
+                                            I
+                                            wanted, was delivered quickly. Very good
+                                            transaction. Fast shipping. Great blankets fabric and I am planning to buy
+                                            it in
+                                            bulk order.
+                                        </blockquote>
+                                    </div>
+                                    <div class="testimonial-bottom">
+                                        <div class="star-rating ">
+                                            <ul class="list-unstyled rating">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="testimonial-caption">
+                                            <h6 class="fw650">Michal Wincent</h6>
+                                            <div class="text">Customer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="testimonial-avatar ">
+                                        <div class="avatar-img">
+                                            <img src="/images/testimonial/02.jpg" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <blockquote class="testimonial-text">
+                                            The culture is the best at Fablio. You can tell that they truly care about
+                                            the happiness of their employees. It's a really relaxed and calm environment
+                                            and their quality of product is always best. I refer them for the future.
+                                        </blockquote>
+                                    </div>
+                                    <div class="testimonial-bottom">
+                                        <div class="star-rating ">
+                                            <ul class="list-unstyled rating">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="testimonial-caption">
+                                            <h6 class="fw650">Elic Semules</h6>
+                                            <div class="text">Manager</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="testimonial-avatar ">
+                                        <div class="avatar-img">
+                                            <img src="/images/testimonial/03.jpg" alt="Avatar" />
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <blockquote class="testimonial-text">
+                                            I realized after I sent in my order that I had ordered a larger quantity
+                                            than I needed. I emailed and received a quick response, adjustment to my
+                                            order and a refund. Product was shipped out in a timely manner. FABLIO is
+                                            great!
+                                        </blockquote>
+                                    </div>
+                                    <div class="testimonial-bottom">
+                                        <div class="star-rating ">
+                                            <ul class="list-unstyled rating">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="testimonial-caption">
+                                            <h6 class="fw650">Alex Albert Belle</h6>
+                                            <div class="text">CEO-Textile</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -----Blog Section----- -->
+            <section class="base blog-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="bg-layer-content">
+                                <div class="section-title">
+                                    <div class="text-header">
+                                        <h3>NEW BLOGS</h3>
+                                        <div class="title">
+                                            <h2>Latest <b>News And Articles!</b></h2>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>Since more than 40 years, FABLIO is operating in the textile market manufacture and trader. As years go by, the range of produced textiles has been increased.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5 mt-1 blog-slider">
+                        <div class="p-3 m-1">
+                            <div class="card h-100">
+                                <img src="/images/blog/blog-01-600x430.jpg" class="card-img-top p-3" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><small class="text-muted">John Doe / 0 Comments</small></p>
+                                    <h4 class="card-title"><a href="#">
+                                            Can Textiles Lead The Way During The Pandamic?
+                                        </a> </h4>
+                                    <p class="card-text">These cases are perfectly simple and easy to distinguish. In a
+                                        free hour, when our
+                                        ...</p>
+                                    <a class="show-text" href="#">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 m-1">
+                            <div class="card h-100">
+                                <img src="/images/blog/blog-02-600x430.jpg" class="card-img-top p-3" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><small class="text-muted">John Doe / 0 Comments</small></p>
+                                    <h4 class="card-title"><a href="#">One Stop Solution For Textiles Fabrics</a> </h4>
+                                    <p class="card-text">Purus non enim praesent elementum facilisi. Eget mi proin sed
+                                        libero enim sed
+                                        fucib...</p>
+                                    <a class="show-text" href="#">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 m-1">
+                            <div class="card h-100">
+                                <img src="/images/blog/blog-03-600x430.jpg" class="card-img-top p-3" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><small class="text-muted">John Doe / 0 Comments</small></p>
+                                    <h4 class="card-title"><a href="#">
+                                            Textilegence Magazine & Digital Platform
+                                        </a> </h4>
+                                    <p class="card-text">Enim nunc faucibus a pellentesque sit amet porttitor eget.
+                                        Morbi blandit cursus
+                                        risus...</p>
+                                    <a class="show-text" href="#">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 m-1">
+                            <div class="card h-100">
+                                <img src="/images/blog/blog-04-600x430.jpg" class="card-img-top p-3" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><small class="text-muted">John Doe / 0 Comments</small></p>
+                                    <h4 class="card-title"><a href="#">
+                                            Contactless Payments Time Has Come
+                                        </a> </h4>
+                                    <p class="card-text">Viverra accumsan in nisl nisi. Et leo duis ut diam quam nulla
+                                        porttitor massa.
+                                        Pellen...</p>
+                                    <a class="show-text" href="#">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -----Clients Area----- -->
+            <section class="client-area py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="client ">
+                                <div class="py-3 my-4"><img src="./images/client/client-01.png" alt="client-1"></div>
+                                <div class="py-3 my-4"><img src="./images/client/client-02.png" alt="client-2"></div>
+                                <div class="py-3 my-4"><img src="./images/client/client-03.png" alt="client-3"></div>
+                                <div class="py-3 my-4"><img src="./images/client/client-04.png" alt="client-4"></div>
+                                <div class="py-3 my-4"><img src="./images/client/client-01.png" alt="client-1"></div>
+                                <div class="py-3 my-4"><img src="./images/client/client-02.png" alt="client-2"></div>
+                                <div class="py-3 my-4"><img src="./images/client/client-03.png" alt="client-3"></div>
+                                <div class="py-3 my-4"><img src="./images/client/client-04.png" alt="client-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ---------------End Main Area--------------- -->
+
+        <!-- ---------------Start Footer Area--------------- -->
+
+        <footer class="footer-area">
+            <div class="first-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                            <div class="about-footer">
+                                <div class="navlogo">
+                                    <a href="./index.html"><img src="./images/footer-logo.svg" alt="company logo"></a>
+                                    <div class="nav-text">
+                                        <p class="mb-0">Fablio is operating in the textile market, as the manufacture
+                                            and trader. As years go by the range of produced textiles products has
+                                            increased.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 m-auto text-align-center display-content">
+                            <div class=" feature-icon">
+                                <ul class="list-unstyled social-icon mb-0">
+                                    <li class=" icon mx-2"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class=" icon  mx-1"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class=" icon  mx-1"><a href="#"><i class="fa fa-flickr"></i></a></li>
+                                    <li class=" icon  mx-1"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-line">
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 pb-2 mb-5 footer-navigation">
+                            <div class="footer-navigation-inner">
+                                <div class="nav-title">
+                                    <h3>Get Free Estimate</h3>
+                                </div>
+                                <div class="nav-text">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <h4 class="fw650">123-456-78910</h4>
+                                        </li>
+                                        <li>
+                                            <p>Our online scheduling and payment system is safe.</p>
+                                        </li>
+                                        <li>
+                                            <div class="d-inline-flex mt-1">
+                                                <!-- button -->
+                                                <a href="#" class="button  button2">REQUEST ONLINE FORM</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 pb-2 mb-5 footer-navigation">
+                            <div class="footer-navigation-inner">
+                                <div class="nav-title">
+                                    <h3>Textile Services</h3>
+                                </div>
+                                <div class="nav-text">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2 pb-1"><a href="#"
+                                                class="font-normal services-text-style"><span>Patch Fabric Works</span>
+                                            </a></li>
+                                        <li class="mb-2 pb-1"><a href="#"
+                                                class="font-normal services-text-style"><span>Garment
+                                                    Stitching</span></a></li>
+                                        <li class="mb-2 pb-1"><a href="#"
+                                                class="font-normal services-text-style"><span>Garment
+                                                    Stitching</span></a></li>
+                                        <li class="mb-2 pb-1"><a href="#"
+                                                class="font-normal services-text-style"><span>Stone Work
+                                                    Embroidery</span></a></li>
+                                        <li class="mb-2 pb-1"><a href="#"
+                                                class="font-normal services-text-style"><span>Computerised
+                                                    Embroidery</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 pb-2 mb-5 footer-navigation">
+                            <div class="footer-navigation-inner">
+                                <div class="nav-title">
+                                    <h3>Recent Posts</h3>
+                                </div>
+                                <div class="nav-text">
+                                    <ul class="list-unstyled post">
+                                        <li class="mb-3">
+                                            <div class="post-img">
+                                                <a href="#"><img src="/images/blog/b_thumbb-01.jpg"
+                                                        class="image-fluid"></a>
+                                            </div>
+                                            <div class="post-text">
+                                                <a href="#">Can textiles lead the way during the pandemic?
+                                                </a>
+                                                <p class="mb-0">March 18, 2021</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-img">
+                                                <a href="#"><img src="/images/blog/b_thumbb-02.jpg"
+                                                        class="image-fluid"></a>
+                                            </div>
+                                            <div class="post-text">
+                                                <a href="#">Can textiles lead the way during the pandemic?
+                                                </a>
+                                                <p class="mb-0">March 18, 2021</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3  pb-2 mb-5 pe-0 me-0 footer-navigation">
+                            <div class="footer-navigation-inner">
+                                <div class="nav-title">
+                                    <h3>Contact Us</h3>
+                                </div>
+                                <div class="nav-text">
+                                    <ul class="list-unstyled contact-icon">
+                                        <li><i class="fa fa-map-marker""></i>
+                                        4789 Melmorn Street,Zakila Ton Mashintron Town
+                                    </li>
+                                    <li><i class=" fa fa-phone"></i>
+                                            (+01) 123 456 7890</li>
+                                        <li><i class="fa fa-envelope-o"></i>
+                                            <a href="mailto:info@example.com">info@example.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-navigation">
+                            <div class="p-0">
+                                <form id="subscribe-form" class="newsletter-form" method="post" action="#"
+                                    data-mailchimp="true">
+                                    <div class="clearfix" id="subscribe-content">
+                                        <input type="text" name="NAME" id="txtname" placeholder="Your Name *"
+                                            required="">
+                                        <input type="email" name="EMAIL" id="txtemail" placeholder="Your Email *"
+                                            required="">
+                                        <a href="#" class="button button1 button-size" type="submit">Subscribe us<i
+                                                class="fa fa-caret-right ms-2" aria-hidden="true"></i></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 m-auto">
+                            <div class="text-align-center">
+                                <div class="copy-text ">
+                                    <p class="mb-2">Copyright © <a href="#">Fablio</a> All rights reserved.</p>
+                                </div>
+                                <div class="footer-nav">
+                                    <div class="breadcrumb-wrapper">
+
+                                        <span>
+                                            <a href="#">
+                                                About Us
+                                            </a>
+                                        </span>
+                                        <span>
+                                            &nbsp; | &nbsp;
+                                        </span>
+                                        <span>
+                                            <a href="#">
+                                                Contact Us
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ---------------End Footer Area--------------- -->
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js.map"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- slick slider js -->
+    <!-- jQuery CDN -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- slick Carousel CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    <!-- custom js -->
+    <script src="/js/main.js"></script>
+    <!-- Fontawasome link  -->
+    <script src="https://kit.fontawesome.com/4ba9eb457c.js" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        // service slider
+        $(document).ready(function () {
+            $(".service-slider").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 651,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+        // testimonial slider 
+        $(document).ready(function () {
+            $(".testimonial-slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                
+            });
+        });
+
+        // blog slider
+        $(document).ready(function () {
+            $(".blog-slider").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 651,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+        // client slider
+        $(document).ready(function () {
+            $(".client").slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 3 ,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 601,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 551,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 400,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+
+</html>

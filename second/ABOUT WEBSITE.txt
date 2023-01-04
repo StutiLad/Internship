@@ -1,0 +1,25 @@
+header                   - done
+revolution slider        - done except Buttons
+about Textiles           - done except youtube icon and animation on right side and on image
+about fablio             - done except pattern and animation on image and buttons
+project                  - done except animation on icon
+Production (services)    - whole
+Measurements             -
+testimonials             -
+blogs                    -
+clients                  -
+footer                   -
+
+--------------------------------------------------------------------------------------------------------
+commone attributes :-
+-> buttons - transbck wid white hover, lightgreybck with darkgrey hover, redbck with darkgrey hover,
+redbck with white hover        
+
+--------------------------------------------------------------------------------------------------------
+
+
+button 
+-> button1 : hover 
+
+
+ 
